@@ -20,8 +20,8 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "FREELANCERS")
 @NamedQueries({
-      @NamedQuery(name = "Freelancer.getAll", query = "SELECT c FROM Freelancer c")})
-//    @NamedQuery(name = "Freelancer.findById", query = "SELECT c FROM Freelancer c WHERE c.id = :id"),
+      @NamedQuery(name = "Freelancer.getAll", query = "SELECT c FROM Freelancer c"),
+      @NamedQuery(name = "Freelancer.findById", query = "SELECT c FROM Freelancer c WHERE c.id = :id")})
 //    @NamedQuery(name = "Freelancer.findByName", query = "SELECT c FROM Freelancer c WHERE c.name = :name"),
 //    @NamedQuery(name = "Freelancer.findByAddress", query = "SELECT c FROM Freelancer c WHERE c.address = :address")})
 public class Freelancer implements Serializable {

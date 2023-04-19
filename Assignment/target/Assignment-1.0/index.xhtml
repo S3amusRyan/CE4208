@@ -19,11 +19,21 @@
                 
                 <br></br>
                 
-                User ID:<h:outputText/>
+                Freelancer Login:<h:outputText/>
                 <h:inputText value="ID" /> 
                 <h:commandButton value="Login" action="findAllProviders"/><h:outputText/>
-
-
+                <h:outputText/>
+                <br></br>
+                Provider Login:<h:outputText/>
+                <h:inputText value="ID" /> 
+                <h:commandButton value="Login" action="findAllProviders"/><h:outputText/>
+                <h:outputText/>
+                <br></br>
+                Admin Login:<h:outputText/>
+                <h:outputLabel for="password">Password:</h:outputLabel>
+		<h:inputSecret id="password" value="#{Admin.findById}" required="true" requiredMessage="Please enter password"></h:inputSecret>
+                
+                <h:commandButton action="#{loginView.login}" value="Login"></h:commandButton>
            
             </h:panelGrid>
         </h:form>
